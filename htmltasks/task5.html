@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Task 5</title>
+    <style>
+      form {
+        margin-left: 30rem;
+        margin-top: 8rem;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      input[type="number"] {
+        width: 24.7rem;
+      }
+      p {
+        text-align: end;
+        margin: 0rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <th style="text-align: center">First Name</th>
+          <td><input type="text" size="55" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Last Name</th>
+          <td><input type="text" size="55" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Email</th>
+          <td><input type="text" size="55" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Password</th>
+          <td><input type="password" size="55" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Re-enter Password</th>
+          <td><input type="password" size="55" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Gender:</th>
+          <td>
+            <input type="radio" id="male" />
+            <label for="male">Male</label><br />
+            <hr style="margin-top: 0.1rem; margin-bottom: 0.1rem" />
+            <input type="radio" id="female" />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Age:</th>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Phone Number</th>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Address</th>
+          <td>
+            <textarea
+              rows="5"
+              cols="52"
+              name="comment"
+              form="usrform"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th style="text-align: center">State</th>
+          <td><input type="text" size="55" /></td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Country</th>
+          <td>
+            <select>
+              <option selected="selected">Choose your country</option>
+              <option>Afghanistan</option>
+              <option>Bangladesh</option>
+              <option>Bhutan</option>
+              <option>China</option>
+              <option>India</option>
+              <option>Maldives</option>
+              <option>Myanmar</option>
+              <option>Nepal</option>
+              <option>Pakistan</option>
+              <option>Sri Lanka</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th style="text-align: center">Languages known</th>
+          <td style="column-span: all">
+            <input type="checkbox" />
+            <label for="lang1">English</label>
+            <input type="checkbox" />
+            <label for="lang2">Kannada</label>
+            <input type="checkbox" />
+            <label for="lang3">Hindi</label>
+            <input type="checkbox" />
+            <label for="lang4">Telugu</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" />
+            <label for="check">
+              Hereby I declare all the given details are true
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>
+              Log in to
+              <a href="https://www.ethnus.com/" target="_blank">Ethnus</a>
+              website
+            </p>
+          </td>
+        </tr>
+      </table>
+      <input
+        type="submit"
+        value="Register"
+        style="position: relative; left: 15rem; top: 1rem"
+      />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+* {
+  color: white;
+}
+body {
+  display: grid;
+  place-content: center;
+}
+.container {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  height: 40vw;
+  background: #a22b55;
+  margin-top: 2rem;
+}
+table {
+  padding: 1rem 3rem;
+  width: 60%;
+  height: 80%;
+  background: #75203f;
+}
+button {
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  font-weight: bold;
+  width: 22.5rem;
+  height: 2.5rem;
+  margin-left: 6rem;
+  margin-top: -1rem;
+  font-size: large;
+  cursor: pointer;
+}
+select#lang {
+  color: black;
+}
+select#lang option {
+  color: black;
+}
+input[type="radio"] {
+  color: black;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"] {
+  color: black;
+  width: 11.5rem;
+  height: 1.5rem;
+}
+textarea {
+  color: black;
+  width: 11.5rem;
+  height: 2rem;
+}
+label {
+  font-size: larger;
+  margin-left: 6rem;
+  margin-right: -3rem;
+}

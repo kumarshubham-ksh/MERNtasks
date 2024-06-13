@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  place-content: center;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+.container {
+  background: #d9da3e;
+  padding: 1rem;
+  border: 1px dashed black;
+  height: 28rem;
+  width: 32rem;
+  margin-top: 6.5rem;
+}
+.wrapper {
+  display: flex;
+  column-gap: 1rem;
+}
+.nav-item {
+  min-width: 8rem;
+  padding: 5px;
+  margin-top: 0.5rem;
+  background: white;
+  border-right: 1rem solid black;
+}
+.content {
+  color: purple;
+  font-size: large;
+  margin-top: -1.5rem;
+}
+hr {
+  width: 100%;
+  color: purple;
+  border: dotted 1px;
+}
+.nav {
+  margin-top: 1rem;
+}

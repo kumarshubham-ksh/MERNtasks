@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS_Task7.css" />
+    <title>CSS Task 7</title>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="your name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td>
+            <input type="password" name="password" id="password" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone Number:</label></td>
+          <td>
+            <input type="tel" name="phone" id="phone" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            Male: <input type="radio" name="gender" id="male" /> Female:
+            <input type="radio" name="gender" id="male" /> Other:
+            <input type="radio" name="gender" id="male" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lang">language</label>
+          </td>
+          <td>
+            <select name="lang" id="lang">
+              <option value="none">Select language</option>
+              <option value="telugu">Bengali</option>
+              <option value="eng">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="telugu">Malayalam</option>
+              <option value="telugu">Tamil</option>
+              <option value="telugu">Telugu</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="zipcode">Zip Code:</label>
+          </td>
+          <td>
+            <input type="number" name="zipcode" id="zipcode" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="about">About:</label>
+          </td>
+          <td>
+            <textarea
+              name="about"
+              id="about"
+              cols="30"
+              rows="3"
+              placeholder="Write about yourself..."
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button href="#register">Register</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

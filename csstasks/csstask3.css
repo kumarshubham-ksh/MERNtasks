@@ -1,0 +1,24 @@
+body {
+  display: grid;
+  place-content: center;
+  font-size: large;
+}
+table {
+  width: 80vw;
+  padding: 5px;
+  border-collapse: collapse;
+  margin-top: 12rem;
+}
+td {
+  padding: 5px;
+  font-weight: 400;
+}
+th {
+  background-color: #04a96d;
+  color: white;
+  text-align: left;
+  padding: 0.3rem;
+}
+.grey {
+  background-color: lightgray;
+}

@@ -1,0 +1,48 @@
+* {
+  font-size: x-large;
+}
+body {
+  margin: 0rem 3rem;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  margin-top: 5rem;
+}
+.navbar {
+  padding: 10px;
+  border: 1px solid black;
+}
+.navitem {
+  transition: all 0.7s ease-in;
+}
+.item {
+  cursor: pointer;
+  padding: 15px;
+}
+.vertical {
+  width: 25vw;
+  background-color: lightblue;
+  color: blue;
+}
+.vertical .item:hover {
+  background-color: orange;
+  color: white;
+}
+.horizontal {
+  width: 30vw;
+  display: flex;
+  background-color: lightgray;
+  color: blue;
+}
+.horizontal .item {
+  border-right: 1px blue solid;
+}
+.horizontal .item:hover {
+  background-color: gray;
+  color: white;
+}
+h5 {
+  margin-left: 3rem;
+}
