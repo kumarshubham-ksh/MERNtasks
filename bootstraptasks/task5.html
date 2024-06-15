@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Task 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="w-50 mx-auto h-100 mt-5"
+      style="background-color: lightgray; padding: 1rem"
+    >
+      <form class="needs-validation" novalidate>
+        <div class="row mb-3">
+          <label id="fname" for="inputFirstName" class="col-sm-2 col-form-label"
+            ><b>First Name</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">
+                <i id="firstlogo" class="fa-solid fa-user"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                id="inputFirstName"
+                placeholder="First Name"
+                required
+              />
+              <div class="invalid-feedback">Please supply your first name</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label id="lname" for="inputLastName" class="col-sm-2 col-form-label"
+            ><b>Last Name</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text">
+                <i id="lastlogo" class="fa-solid fa-user"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                id="inputLastName"
+                placeholder="Last Name"
+                required
+              />
+              <div class="invalid-feedback">Please supply your last name</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label id="emailadd" for="inputEmail" class="col-sm-2 col-form-label"
+            ><b>E-Mail</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">
+                <i id="emaillogo" class="fa-solid fa-envelope"></i>
+              </span>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail"
+                placeholder="E-Mail Address"
+                required
+              />
+              <div class="invalid-feedback">
+                Please supply your email address
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label id="phonenum" for="inputPhone" class="col-sm-2 col-form-label"
+            ><b>Phone #</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text">
+                <i id="phonelogo" class="fa-solid fa-phone"></i>
+              </span>
+              <input
+                type="tel"
+                class="form-control"
+                id="inputPhone"
+                placeholder="(845)555-1212"
+                required
+              />
+              <div class="invalid-feedback">
+                Please supply your phone number
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label
+            id="streetadd"
+            for="inputAddress"
+            class="col-sm-2 col-form-label"
+            ><b>Address</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text">
+                <i id="addlogo" class="fa-solid fa-house"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Address"
+                required
+              />
+              <div class="invalid-feedback">
+                Please supply your street address
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label id="cityname" for="inputCity" class="col-sm-2 col-form-label"
+            ><b>City</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text">
+                <i id="citylogo" class="fa-solid fa-house"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                id="inputCity"
+                placeholder="city"
+                required
+              />
+              <div class="invalid-feedback">Please supply your city</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label id="statename" for="inputState" class="col-sm-2 col-form-label"
+            ><b>State</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text">
+                <i id="statelogo" class="fa-solid fa-list"></i>
+              </span>
+              <select class="form-control" id="inputState" required>
+                <option value="" selected disabled>
+                  Please select your state
+                </option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+              <div class="invalid-feedback">Please choose your state</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label id="hosting" for="inputHosting" class="col-sm-2 col-form-label"
+            ><b>Do you have hosting?</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <input type="radio" name="inputHosting" required value="y" /> Yes
+            <br />
+            <input type="radio" name="inputHosting" required value="n" /> No
+            <div class="invalid-feedback">Please choose your option</div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label
+            id="projectdesc"
+            for="inputDescription"
+            class="col-sm-2 col-form-label"
+            ><b>Project Description</b></label
+          >
+          <div class="col-sm-10 has-validation">
+            <div class="input-group has-validation">
+              <span class="input-group-text">
+                <i id="prologo" class="fa-sharp fa-solid fa-pen"></i>
+              </span>
+              <textarea
+                class="form-control"
+                id="inputDescription"
+                rows="3"
+                placeholder="Project Description"
+                required
+              ></textarea>
+              <div class="invalid-feedback">
+                Please supply your project description
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="submit" class="col-sm-2"></label>
+          <div class="col-sm-10">
+            <button
+              type="submit"
+              class="btn btn-warning text-white"
+              id="submit"
+              onclick="Validate()"
+            >
+              Send <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      (function () {
+        "use strict";
+        var forms = document.querySelectorAll(".needs-validation");
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            "submit",
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+      function Validate() {
+        const inputFirstName = document.getElementById("inputFirstName").value;
+        if (inputFirstName.length == 0) {
+          document.getElementById("fname").style.color = "red";
+          document.getElementById("firstlogo").style.color = "red";
+        }
+        const inputLastName = document.getElementById("inputLastName").value;
+        if (inputLastName.length == 0) {
+          document.getElementById("lname").style.color = "red";
+          document.getElementById("lastlogo").style.color = "red";
+        }
+        const inputEmail = document.getElementById("inputEmail").value;
+        if (inputEmail.length == 0) {
+          document.getElementById("emailadd").style.color = "red";
+          document.getElementById("emaillogo").style.color = "red";
+        }
+        const inputPhone = document.getElementById("inputPhone").value;
+        if (inputPhone.length == 0) {
+          document.getElementById("phonenum").style.color = "red";
+          document.getElementById("phonelogo").style.color = "red";
+        }
+        const inputAddress = document.getElementById("inputAddress").value;
+        if (inputAddress.length == 0) {
+          document.getElementById("streetadd").style.color = "red";
+          document.getElementById("addlogo").style.color = "red";
+        }
+        const inputCity = document.getElementById("inputCity").value;
+        if (inputCity.length == 0) {
+          document.getElementById("cityname").style.color = "red";
+          document.getElementById("citylogo").style.color = "red";
+        }
+        const inputState = document.getElementById("inputState").value;
+        if (inputState.length == 0) {
+          document.getElementById("statename").style.color = "red";
+          document.getElementById("statelogo").style.color = "red";
+        }
+        const inputDescription =
+          document.getElementById("inputDescription").value;
+        if (inputDescription.length == 0) {
+          document.getElementById("projectdesc").style.color = "red";
+          document.getElementById("prologo").style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
