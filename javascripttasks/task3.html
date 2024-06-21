@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="jstask3.js"></script>
+    <title>JavaScript Task 3</title>
+  </head>
+  <body style="margin-top: 18rem; margin-left: 42rem">
+    <p>
+      <label for="firstNumber">1st Number :</label>
+    </p>
+    <input
+      type="number"
+      id="firstNumber"
+      style="position: fixed; left: 47.5rem; bottom: 26.3rem"
+    />
+    <p>
+      <label for="secondNumber">2nd Number:</label>
+    </p>
+    <input
+      type="number"
+      id="secondNumber"
+      style="position: fixed; left: 47.5rem; bottom: 24.2rem"
+    />
+    <button onclick="multiplyNumbers()">Multiply</button>
+    <button onclick="divideNumbers()" style="margin-left: 0.5rem">
+      Divide
+    </button>
+    <p id="info" style="margin-bottom: -1rem"></p>
+    <p id="result"></p>
+  </body>
+</html>
